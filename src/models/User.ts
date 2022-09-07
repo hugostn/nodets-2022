@@ -1,7 +1,7 @@
 type User = {
     id: number,
     name: string,
-    emails: string[]
+    emails?: string[]
 }
 
 export default User;

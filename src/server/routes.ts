@@ -1,8 +1,10 @@
 import { Application, Router } from 'express';
-import ConfigController from '../controllers/ConfigController';
+import IndexController from '../controllers/IndexController';
+import UserController from '../controllers/UserController';
 
-const routes: [string, Router][] = [
-  ['/', ConfigController]
+const routes: [string, Router][] = [  
+  ['/user/', UserController],
+  ['/', IndexController]
 ];
 
 export default (app: Application) => {
