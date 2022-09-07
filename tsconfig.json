@@ -18,4 +18,9 @@
     "./node_modules/@types",
     "./src/@types"
   ],
+  "include": [
+    "src/**/*",
+    "node_modules/@types",
+    "__test__/**/**.ts"
+]
 }
